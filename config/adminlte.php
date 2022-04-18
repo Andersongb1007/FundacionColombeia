@@ -225,98 +225,92 @@ return [
     */
 
     'menu' => [
-        // Navbar items:
-        [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
-        ],
-        [
-            'type'         => 'fullscreen-widget',
-            'topnav_right' => true,
-        ],
 
-        // Sidebar items:
-        [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
+            'text' => 'Perfil de usuario',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
+        //usuarios
+        ['header' => 'Administrar usuarios'],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Usuarios',
+            'icon'    => 'fas fa-fw fa-users',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Crear usuario',
                     'url'  => '#',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'Lista de usuarios',
+                    'url'  => 'users/show',
+                ],
+            ],
+        ],
+        
+        ['header' => 'Administrar eventos televisivos'],
+        [
+            'text'    => 'Eventos',
+            'icon'    => 'fas fa-fw fa-tv',
+            'submenu' => [
+                [
+                    'text' => 'Crear eventos',
+                    'url'  => '#',
                 ],
                 [
-                    'text' => 'level_one',
+                    'text' => 'Lista de eventos',
                     'url'  => '#',
                 ],
             ],
         ],
-        ['header' => 'labels'],
+        
+        ['header' => 'Administrar Operaciones Tecnicas'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text'    => 'Eventos',
+            'icon'    => 'fas fa-solid fa-people-carry-box',
+            'submenu' => [
+                [
+                    'text' => 'Crear eventos',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Lista de eventos',
+                    'url'  => '#',
+                ],
+            ],
         ],
+        ['header' => 'Administrar Almacen'],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text'    => 'Almacen de Ingenieria',
+            'icon'    => 'fas fa-fw fa-users',
+            'submenu' => [
+                [
+                    'text' => 'Crear bien ',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Lista de bienes',
+                    'url'  => '#',
+                ],
+            ],
         ],
+        
+
+        ['header' => 'Administrar ordenes de material'],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text'    => 'Ordenes de material',
+            'icon'    => 'fas fa-fw fa-users',
+            'submenu' => [
+                [
+                    'text' => 'verificar estado del bien ',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Verificar estado del bien a la hora de reingresar al almacen',
+                    'url'  => '#',
+                ],
+            ],
         ],
     ],
 
