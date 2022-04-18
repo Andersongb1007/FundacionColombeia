@@ -1,27 +1,27 @@
 
 @extends('adminlte::page')
 
-@section('title', 'Seguridad')
+@section('title', 'Crear bien')
 
 @section('content_header')
-    <h1>Crear orden para retirar o reingresar bienes al almacen</h1>
+    <h1>Crear nuevo bien en el almacen</h1>
 @stop
 
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h5 class="text-center">Ordenes</h5>
+            <h5 class="text-center">Crear bien</h5>
         </div>
         <div class="card-body">
 
         <div class="form-row">
             <div class="form-group col-md-12">
-                <label for="nombre">Nombre del usuario</label>
+                <label for="nombre">Nombre </label>
                 <input type="text" class="form-control" id="nombre" >
             </div>
 
             <div class="form-group col-md-12">
-                <label for="descripcion">Descripcion o motivo</label>
+                <label for="descripcion">Descripcion</label>
                 <textarea class="form-control" id="descripcion" rows="3"></textarea>
             </div>
 
@@ -31,21 +31,38 @@
             </div>
             
             <div class="form-group col-md-6 ">
-                <label for="cantidad">Evidencia fotografica del estado del bien:</label>
+                <label for="cantidad">Seleccione imagen:</label>
                 <input type="file" accept="image/*" class="form-control" id="seleccionArchivos">
                 
             </div>
 
             <div class="form-group col-md-6">
-                <img id="imagenPrevisualizacion" width="400px " height="400px">
+                <img id="imagenPrevisualizacion" width="200px " height="300px">
             </div>
 
+            <div class="form-group col-md-12">
+                <label for="tipo">Tipo</label>
+                <select class="form-control" id="tipo">
+                <option>Tipo 1</option>
+                <option>Tipo 2</option>
+                <option>Tipo 3</option>
+                </select>
+            </div>
+            
+            <div class="form-group col-md-12">
+                <label for="estado">Estado</label>
+                <select class="form-control" id="estado">
+                <option>Bueno</option>
+                <option>defectuoso</option>
+                <option>Por reparar</option>
+                </select>
+            </div>
+            
             <div class="form-group col-md-6 align-self-auto mx-auto">
                 <button class="btn btn-primary " type="button">Crear</button>
                 <button class="btn btn-danger" type="reset">Reiniciar formulario</button>
                 <a href="{{route('seguridad.index')}}" class="btn btn-secondary">Volver a lista de ordenes</a>
             </div>
-
         </div>
     </div>
 @stop

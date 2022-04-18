@@ -13,7 +13,8 @@ class EventosController extends Controller
      */
     public function index()
     {
-        //
+        //$users = User::all();
+        return view('eventos.index');
     }
 
     /**
@@ -23,7 +24,7 @@ class EventosController extends Controller
      */
     public function create()
     {
-        //
+        return view('eventos.create');
     }
 
     /**
@@ -54,9 +55,9 @@ class EventosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editar()
     {
-        //
+        return view('eventos.edit');
     }
 
     /**

@@ -10,10 +10,10 @@
 <div class="card">
     <div class="card-body">
         <div class="card-header">
-        <h5 class="card-title">Se a logrado iniciar sesion con exito. (<b>{{auth()->user()->name}}</b>)</h5>
+        <h5 class="card-title">Bienvenid@ (<b>{{auth()->user()->name}}</b>)</h5>
         </div>
         <br>
-        <p class="card-text"> Bienvenido al sistema de inventario de la fundacion colombeia. </p>
+        <p class="card-text"> Sistema de inventario de la fundacion colombeia. </p>
     </div>
 </div>
 

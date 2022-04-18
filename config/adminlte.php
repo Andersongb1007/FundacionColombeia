@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => 'Fundacion Colombeia',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -226,10 +226,16 @@ return [
 
     'menu' => [
 
+        
+        [
+            'text' => 'Inicio',
+            'url'  => 'home',
+            'icon' => 'fas fa-fw fa-home',
+        ],
         ['header' => 'account_settings'],
         [
             'text' => 'Perfil de usuario',
-            'url'  => 'admin/settings',
+            'url'  => 'perfil',
             'icon' => 'fas fa-fw fa-user',
         ],
         //usuarios
@@ -239,12 +245,12 @@ return [
             'icon'    => 'fas fa-fw fa-users',
             'submenu' => [
                 [
-                    'text' => 'Crear usuario',
-                    'url'  => '#',
+                    'text' => 'Lista de usuarios',
+                    'url'  => 'users',
                 ],
                 [
-                    'text' => 'Lista de usuarios',
-                    'url'  => 'users/show',
+                    'text' => 'Crear usuario',
+                    'url'  => 'users/create',
                 ],
             ],
         ],
@@ -255,60 +261,44 @@ return [
             'icon'    => 'fas fa-fw fa-tv',
             'submenu' => [
                 [
-                    'text' => 'Crear eventos',
-                    'url'  => '#',
-                ],
-                [
                     'text' => 'Lista de eventos',
-                    'url'  => '#',
+                    'url'  => 'eventos',
                 ],
-            ],
-        ],
-        
-        ['header' => 'Administrar Operaciones Tecnicas'],
-        [
-            'text'    => 'Eventos',
-            'icon'    => 'fas fa-solid fa-people-carry-box',
-            'submenu' => [
                 [
                     'text' => 'Crear eventos',
-                    'url'  => '#',
-                ],
-                [
-                    'text' => 'Lista de eventos',
-                    'url'  => '#',
+                    'url'  => 'eventos/create',
                 ],
             ],
         ],
         ['header' => 'Administrar Almacen'],
         [
             'text'    => 'Almacen de Ingenieria',
-            'icon'    => 'fas fa-fw fa-users',
+            'icon'    => 'fas fa-fw fa-box',
             'submenu' => [
                 [
                     'text' => 'Crear bien ',
-                    'url'  => '#',
+                    'url'  => 'almacen/create',
                 ],
                 [
                     'text' => 'Lista de bienes',
-                    'url'  => '#',
+                    'url'  => 'almacen',
                 ],
             ],
         ],
         
 
-        ['header' => 'Administrar ordenes de material'],
+        ['header' => 'Seguridad'],
         [
             'text'    => 'Ordenes de material',
-            'icon'    => 'fas fa-fw fa-users',
+            'icon'    => 'fas fa-fw fa-lock',
             'submenu' => [
                 [
-                    'text' => 'verificar estado del bien ',
-                    'url'  => '#',
+                    'text' => 'Lista de ordenes',
+                    'url'  => 'seguridad',
                 ],
                 [
-                    'text' => 'Verificar estado del bien a la hora de reingresar al almacen',
-                    'url'  => '#',
+                    'text' => 'Crear ordenes para los bienes del almacen',
+                    'url'  => 'seguridad/create',
                 ],
             ],
         ],

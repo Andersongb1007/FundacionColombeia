@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SeguridadController extends Controller
+class AlmacenController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class SeguridadController extends Controller
      */
     public function index()
     {
-        return view('seguridad.index');
+        return view('almacen.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class SeguridadController extends Controller
      */
     public function create()
     {
-        return view('seguridad.create');
+        return view('almacen.create');
     }
 
     /**
